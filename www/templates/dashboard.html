@@ -1,0 +1,42 @@
+<ion-view view-title="Dashboard">
+    <ion-content style="background-color:#583E7E;">
+        <div ng-repeat="pack in level_packs" class="col s12 m4">
+            <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{{ pack.image }}">
+                </div>
+                <div class="card-content">
+                    <div class="col s6 m6">
+                        <span class="card-title activator grey-text text-darken-4">{{ pack.name }}</span>
+                    </div>
+                    <div class="col s6 m6">
+                        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">{{ pack.levels }} {{ pack.levels2}}</i></span>
+                    </div>
+                    <p><a href="#">Mision 1</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{ pack.name }}<i class="ion-close-round right"></i></span>
+                    <br/>
+                    <p style="color: #000000;">{{ pack.back }}</p>
+                     <div class="button-bar">
+                        <a ng-click="goGame(pack,0)" class="button button-positive">1</a>
+                        <a ng-click="goGame(pack,1)"  class="button button-positive">2</a>
+                         <a ng-click="goGame(pack,2)"  class="button button-positive">3</a>
+                          <a ng-click="goGame(pack,3)"  class="button button-positive">4</a>
+                           <a ng-click="goGame(pack,4)"  class="button button-positive">5</a>
+                    </div>
+                       <div class="button-bar">
+                        <a ng-click="goGame(pack,5)"  class="button button-positive">6</a>
+                        <a ng-click="goGame(pack,6)"  class="button button-positive">7</a>
+                         <a ng-click="goGame(pack,7)"  class="button button-positive">8</a>
+                          <a ng-click="goGame(pack,8)"  class="button button-positive">9</a>
+                           <a ng-click="goGame(pack,9)"  class="button button-positive">10</a>
+                    </div>
+                    <span class="card-title grey-text text-darken-4"><i ng-click="goGame(pack,-1)" class="material-icons center">Iniciar!</i></span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </ion-content>
+</ion-view>

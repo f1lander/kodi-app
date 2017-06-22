@@ -1,0 +1,23 @@
+<ion-view view-title="Achievements">
+    <ion-content style="background-color:#583E7E;">
+        <div ng-repeat="achievement in achievements" class="col s12 m2">
+            <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{{ achievement.image }}">
+                </div>
+                <div class="card-content">
+                    <div class="col s12 m12">
+                        <span class="card-title activator grey-text text-darken-4">{{ achievement.name }}</span>
+                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{ achievement.name }}</span>
+                    <p style="color: #000000;">{{ achievement.description }}</p>
+                    <span class="card-title grey-text text-darken-4"></span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </ion-content>
+</ion-view>

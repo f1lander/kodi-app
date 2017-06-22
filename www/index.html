@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
 
-    <link rel="manifest" href="manifest.json">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
 
-    <!-- un-comment this code to enable service worker
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
-      }
-    </script>-->
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
+    Doris Hotel beranda 94662107
     -->
+   
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/oclazyload/dist/ocLazyLoad.js"></script>
+   <script src="lib/materialize.min.js"></script>
+  <!-- cordova script (this will be a 404 during develop ment) -->
+  <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> -->
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+  <!-- your app's js -->
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
+  <script src="js/app.js"></script>
+  <script src="js/game/gameController.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/phaser.min.js"></script>
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
-  </body>
+    <script src="js/blockly/blockly_compressed.js"></script>
+    <script src="js/blockly/javascript_compressed.js"></script>
+    <script src="js/blockly/blocks_compressed.js"></script>
+    <script src="js/blockly/loop_while_not_reached_goal.js"></script>
+    <script src="js/blockly/move_jump.js"></script>
+    <script src="js/blockly/move_right.js"></script>
+    <script src="js/blockly/move_left.js"></script>
+    <script src="js/blockly/move_down.js"></script>
+    <script src="js/blockly/move_up.js"></script>
+    <script src="js/blockly/loop_for.js"></script>
+    <script src="js/blockly/move_turn.js"></script>
+    <script src="js/blockly/en.js"></script>
+  
+</head>
+
+<body ng-app="starter">
+  <div>
+    <ion-nav-view cache-view="false">
+    </ion-nav-view>
+  </div>
+</body>
+
 </html>
