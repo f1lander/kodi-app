@@ -74,13 +74,13 @@ $scope.$on('$ionicView.afterLeave', function(){
                 "blocksAvailable": 15
             },
             "l5": {
-                "maxBlocks": 3,
+                "maxBlocks": 10,
                 "stage": "stage_5.json",
                 "imgSrc": "https://trello-attachments.s3.amazonaws.com/5707e52dd033dcc80ebfbb8e/600x647/02af8dc11a0c771614ad3474e4cea20c/Nivel_6.png",
                 "blocksAvailable": 31
             },
             "l6": {
-                "maxBlocks": 5,
+                "maxBlocks": 10,
                 "stage": "stage_6.json",
                 "imgSrc": "https://trello-attachments.s3.amazonaws.com/5707e52dd033dcc80ebfbb8e/600x647/c71efe2aef0c0db16f7d708cdc234570/Nivel_7.png",
                 "blocksAvailable": 31
@@ -92,7 +92,7 @@ $scope.$on('$ionicView.afterLeave', function(){
                 "blocksAvailable": 31
             },
             "l8": {
-                "maxBlocks": 5,
+                "maxBlocks": 10,
                 "stage": "stage_8.json",
                 "imgSrc": "https://trello-attachments.s3.amazonaws.com/5707e52dd033dcc80ebfbb8e/600x647/b7f664a89a91c867b2e60c6a01b397d2/Level_9.png",
                 "blocksAvailable": 31
@@ -122,7 +122,7 @@ $scope.$on('$ionicView.afterLeave', function(){
                 "blocksAvailable": 63
             },
             "l1": {
-                "maxBlocks": 3,
+                "maxBlocks": 10,
                 "stage": "stage_11.json",
                 "imgSrc": "https://trello-attachments.s3.amazonaws.com/5728f3fb6ef18fda43d345af/600x641/26f0fd719dcb08546a8cbff90f9d9086/g12739.png",
                 "blocksAvailable": 63

@@ -1,8 +1,14 @@
 {
   "name": "kodi-mobile",
-  "app_id": "",
+  "app_id": "678fda77",
   "type": "ionic1",
   "watchPatterns": [
-    "scss/**/*"
-  ]
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "integrations": {
+    "cordova": {}
+  }
 }
